@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js.js"></script>
+</head>
+<body>
+
+<style type="text/css">
+
+
+</style>
+
+
+<script>
+
+  const obj = {
+    name: 'Roman',
+    age: 31
+  }
+
+  function getInfo (p1, p2){
+    console.log(`Name is ${this.name} and age is ${this.age} and param1: ${p1} and param2: ${p2}`);
+  }
+
+  // function bind(fn, context, ...params){
+  //   return function(...args){
+  //     const contextId = Date.now().toString()
+  //     context[contextId] = fn;
+  //     const result = context[contextId](...params.concat(...args));
+  //     delete context[contextId];
+  //     return result;
+  //   }
+  // }
+
+  //es5
+  // function bind(fn, context){
+  //   const rest = Array.prototype.slice.call(arguments, 2);
+  //   return function(){
+  //     const args = Array.prototype.slice.call(arguments);
+  //     return fn.apply(context, rest.concat(args))
+  //   }
+  // }
+
+  //es6
+  // function bind(fn, context, ...rest){
+  //   return function(...args){
+  //     // return fn.apply(context, rest.concat(args));
+  //     return fn.call(context, ...rest.concat(args))
+  //   }
+  // }
+  //
+  // bind(getInfo, obj, 'p1', 'p2')()
+  // bind(getInfo, obj, 'p1')('p2')
+  // bind(getInfo, obj)('p1', 'p2')
+  //
+  // console.log(obj);
+
+  function call(fn, context, ...args){
+    const uniqId = Date.now().toString();
+    context[uniqId] = fn;
+    const result = context[uniqId](...args)
+    delete context[uniqId]
+    return result;
+  }
+
+  call(getInfo, obj, 'p1', 'p2');
+
+  function apply(fn, context, args) {
+    const uniqId = Date.now().toString();
+    context[uniqId] = fn;
+    const result = context[uniqId](...args)
+    delete context[uniqId]
+    return result;
+  }
+
+  apply(getInfo, obj, ['p1', 'p2']);
+
+</script>
+
+
+</body>
+</html>
