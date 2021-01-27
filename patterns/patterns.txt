@@ -1,0 +1,24 @@
+pattern?
+- Порождающие 
+-- Конструктор (Constructor) +
+-- Модуль (Module) +
+-- Фабрика (Factory) +
+-- Синглтон(Singletion) +
+-- prototype +
+
+- структурные
+-- Декоратор(Decorator) +
+-- Фасад (Façade) +
+-- adapter +
+-- flyweight +
+-- proxy +
+
+- поведенческие
+-- chain of responsibility +
+-- iterator +
+-- Наблюдатель(Observer) +
+-- Посредник(Mediator) +
+-- Команда(Command) +
+-- state +
+-- strategy +
+-- template +
