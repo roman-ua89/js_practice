@@ -1,0 +1,60 @@
+.dialogContainer {
+    padding: 20px;
+}
+
+.dialogContainerLeft {
+    float: left;
+    width: 200px;
+}
+.dialogContainerRight {
+    margin-left: 220px;
+}
+
+.dialogsUsersList {
+    margin: 0;
+    padding: 0 50px 0 20px;
+    border-right: 2px solid #444;
+}
+
+.dialogsUserItem {
+    color: #444;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.dialogsItem.active {
+    font-size: 16px;
+    color: #000;
+}
+
+.dialogAvatar {
+    max-width: 30px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.dialogItem {
+    margin-bottom: 40px;
+}
+
+.dialogItemLeft {
+    float: left;
+    width: 50px;
+    text-align: center;
+}
+.dialogItemRight {
+    margin-left: 60px;
+}
+
+.dialogItemUserName {
+    font-size: 12px;
+    color: #444;
+}
+
+.dialogItemText {
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #aaa;
+    font-size: 12px;
+    line-height: 16px;
+}

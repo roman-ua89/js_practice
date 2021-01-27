@@ -1,0 +1,19 @@
+.posts {
+
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.itemPhoto {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    float: left;
+}
+.itemText {
+    margin-left: 60px;
+}
+
