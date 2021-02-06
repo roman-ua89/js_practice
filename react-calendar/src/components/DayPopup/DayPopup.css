@@ -1,0 +1,98 @@
+
+.dayPopupOuter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dayPopupInner {
+    width: 320px;
+    background-color: #fff;
+    border: 3px solid #18A0FB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.dayPopupTop {
+    padding: 15px;
+}
+
+.dayPopupMiddle {
+    padding: 0 15px;
+}
+
+.dayPopupClearAll {
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    color: #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1px;
+    cursor: default;
+}
+
+.dayPopupClearAll.active {
+    cursor: pointer;
+    color: #888;
+    font-weight: bold;
+}
+
+.dayPopupProps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dayPopupProps li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.dayPopupProp,
+.dayPopupValue {
+    line-height: 26px;
+}
+
+.dayPopupProp {
+    flex: 30%;
+    font-size: 12px;
+    color: #888;
+}
+
+.dayPopupValue {
+    flex: 70%;
+}
+
+.dayPopupBottom {
+    padding-top: 20px;
+}
+
+.dayPopupActions {
+    background-color: #DCE0E1;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, .05)
+}
+
+.dayPopupActions button {
+    background-color: #fff;
+    width: 49.8%;
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    text-align: center;
+    padding: 0;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.dayPopupActions i {
+    margin-right: 7px;
+}

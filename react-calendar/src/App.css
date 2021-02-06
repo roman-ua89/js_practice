@@ -1,0 +1,180 @@
+body, html {
+    height: 100%;
+    font-size: 14px;
+    color: #333;
+    font-family: 'Quicksand', sans-serif;
+}
+
+button.cancel {
+    color: #e45353;
+}
+
+button.confirm {
+    color: #227122;
+}
+
+button:disabled {
+    color: #ccc;
+    cursor: default;
+}
+
+.text-green {
+    color: #227122;
+}
+
+.text-red {
+    color: #e45353;
+}
+
+.CalendarOuter {
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid transparent;
+    border-radius: 3px;
+}
+
+.CalendarOuter.focus {
+    border-color: #18A0FB;
+}
+
+.dayItem {
+    flex: 1 0 14%;
+    border-right: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    box-sizing: border-box;
+    padding: 13px;
+    min-height: 114px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+
+.dayItem {
+    border-top: 2px solid transparent;
+}
+
+.dayItem.happy {
+    border-top-color: #98CB51;
+}
+
+.dayItem.sad {
+    border: 1px solid #E35D5A;
+}
+
+.dayItem.unspecified {
+    border-top-color: #ffa217;
+}
+
+.dayItem:hover .dayItemUpdate {
+    display: block;
+}
+
+.dayItemUpdate {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    padding: 10px;
+    text-align: right;
+    box-sizing: border-box;
+    z-index: 5;
+    display: none;
+}
+
+.dayItem.sad .dayItemUpdate a {
+    color: #E35D5A;
+}
+
+.dayItem.happy .dayItemUpdate a {
+    color: #227122;
+}
+
+.dayItem.unspecified .dayItemUpdate a {
+    color: #ffa217;
+}
+
+.dayItemUpdate a {
+    text-decoration: none;
+}
+
+.dayItem:hover:not(.today) {
+    background-color: #f5f5f5;
+}
+
+.today {
+    background-color: #18A0FB;
+    color: #fff;
+}
+
+.prevDate,
+.nextDate {
+    color: #aaa;
+}
+
+.dayItem:nth-child(7n + 0) {
+    border-right: 1px solid transparent;
+}
+
+.dayItem:nth-child(7n + 1) {
+    border-left: 1px solid transparent;
+}
+
+.calendarContainer {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.calendar {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+    position: relative;
+}
+
+.calendarWeekdaysHeader {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.calendarWeekDays {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.calendarWeekDays li {
+    float: left;
+    width: 14.28%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #888;
+}
+
+.CalendarWeekdaysGrid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.CalendarWeekdaysGrid:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #fafafa;
+    margin-top: -1px;
+    position: relative;
+    width: 100%;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}

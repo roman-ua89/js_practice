@@ -1,0 +1,43 @@
+
+.numberInputOuter {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.numberInputOuter button {
+    border: none;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    padding: 0;
+}
+
+.numberInputOuter i {
+    line-height: inherit;
+    font-size: 18px;
+    color: #227122;
+}
+
+.numberInputOuter input[type='text'] {
+    border: none;
+    width: auto;
+    outline: none;
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+    max-width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    line-height: 26px;
+}
+
+.numberInputOuter.focus {
+    border-bottom-color: #bfe5ff;
+}

@@ -1,0 +1,32 @@
+
+.moodBtn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.moodBtn.happy:hover i {
+    color: #227122;
+}
+
+.moodBtn.sad:hover i {
+    color: #e45353;
+}
+
+.moodBtn.happy:not(.active),
+.moodBtn.sad:not(.active) {
+    color: #bbb;
+}
+
+.moodBtn.happy.active i {
+    color: #227122;
+}
+
+.moodBtn.sad.active i {
+    color: #e45353;
+}

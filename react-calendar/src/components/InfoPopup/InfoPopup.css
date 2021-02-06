@@ -1,0 +1,68 @@
+.infoPopup {
+    background-color: #fff;
+    padding: 17px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.07);
+    position: absolute;
+    min-width: 180px;
+}
+.infoPopupList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.infoPopupList i {
+    font-style: normal;
+    font-size: 12px;
+}
+
+.infoPopupList li {
+    position: relative;
+    padding-left: 22px;
+    line-height: 16px;
+    margin-bottom: 9px;
+}
+
+.infoPopupList li:last-child {
+    margin-bottom: 0;
+}
+
+.infoPopupList li:before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    border-radius: 50%;
+}
+
+.infoPopupList .countOfGreen:before { background-color: #98CB51; }
+.infoPopupList .countOfRed:before { background-color: #E35D5A; }
+.infoPopupList .countSteps:before {
+    content: "\f54b";
+    font-family: "Font Awesome 5 Pro";
+    transform: rotate(270deg);
+}
+.infoPopupList .mood .infoPopupValue {
+    margin-left: -22px;
+}
+.infoPopupList .mood i.fal {
+    font-size: 16px;
+}
+.infoPopupList .mood.happy i.fal {
+    color: #227122;
+}
+.infoPopupList .mood.sad i.fal {
+    color: #e45353;
+}
+.infoPopupList {}
+
+.infoPopupValue {
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 5px;
+}

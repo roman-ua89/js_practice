@@ -1,0 +1,29 @@
+
+.calendarPrevDate,
+.calendarNextDate {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calendarPrevDate i,
+.calendarNextDate i {
+    line-height: 30px;
+}
+
+.CalendarWeekdaysSwitcher {
+    margin-bottom: 10px;
+}
+
+.CalendarCurrentDate {
+    font-size: 20px;
+    line-height: 30px;
+    min-width: 160px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    display: inline-block;
+}
